@@ -8,7 +8,21 @@ This script changes (reduces) sizes of texts on PCB with the following rules (Un
 | Value (Fabrication) | 1.0 | 0.4 |
 | Other texts | varies | invisible |
 
-## Usage
- After import net list from schematics to pcbnew, Click "Tools" -> "Script Console". Type the following command in the console and hit enter.
+## Installation
+Copy `change_text_size.py` to one of the following folers based on your system.
 
- `shell.runfile("path to this script")`
+Linux
+* /usr/share/kicad/scripting/plugins/
+* ~/.kicad/scripting/plugins
+* ~/.kicad_plugins/
+
+Windows
+* \%KICAD_INSTALL_PATH%/share/kicad/scripting/plugins
+* \%APPDATA%/Roaming/kicad/scripting/plugins
+
+macOS
+* /Applications/kicad/Kicad/Contents/SharedSupport/scripting/plugins
+* ~/Library/Application Support/kicad/scripting/plugins
+
+## Usage
+ After import net list from schematics to pcbnew, Click "Tools" -> "External Plugins" -> "SmallTextSize".
